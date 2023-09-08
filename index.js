@@ -1,5 +1,4 @@
 //eslint error 6
-const http =require('http')
 const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
@@ -8,7 +7,6 @@ const port = 3000;
 
 app.use(express.json());
 
-app.get("/convert",function(req,res){res.send("<h1>This is to convert</h1>")})
 app.post('/convert', async (req, res) => {
   try { 
     const var1=req.body.fromcurrency;
